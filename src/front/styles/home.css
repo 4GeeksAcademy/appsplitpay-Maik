@@ -39,7 +39,8 @@ body {
 }
 
 .hero-image-container {
-  height: 380px;
+  /* height: 500px; */
+  padding-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -143,4 +144,8 @@ body {
 .btn.signup-button:hover {
   background-color: #274d95;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.group{
+box-shadow:  currentColor;
 }

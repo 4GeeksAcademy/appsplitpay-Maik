@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import "../../styles/home.css"
+import image from "../../img/amigos.png"
 
 function Home() {
   const navigate = useNavigate();
-  const imagen = "../../img/amigos.jpg"
-  
+
 
   const handleSignUp = () => {
     navigate('/signup');
@@ -19,7 +19,7 @@ function Home() {
             <strong>YOUR MONEY WHEN AND WHEREVER YOU NEED IT</strong>
           </h1>
           <h3 className="hero-subtitle w-50 mb-4">
-          The account designed to save you time around the world.
+            The account designed to save you time around the world.
           </h3>
           <button
             className="btn text-white signup-button mb-5"
@@ -28,8 +28,8 @@ function Home() {
           </button>
         </div>
         <div className="hero-image-container w-100 mb-5">
-          <img className="rounded-5 img-fluid h-100 hero-image"
-            src={imagen}
+          <img className="group rounded-5 img-fluid h-100 hero-image " style={{ backgroundColor: 'transparent' }} 
+            src={image}
             alt="Imagen supermega arrechisima" />
         </div>
       </section>

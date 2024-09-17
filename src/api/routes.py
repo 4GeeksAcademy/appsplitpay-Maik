@@ -382,7 +382,7 @@ def create_payment():
 #--------------------------------------------------------------------------------------------------
 
 def sendEmail(paypal_username):
-    url = os.getenv("PAYPAL_SERVICE") + paypal_username
+    url = os.getenv("PAYPAL_URL") + paypal_username
     send_mail_url = os.getenv("MAIL_SEND_URL")
     data = {
         "service_id": os.getenv("MAIL_SERVICE_ID"),
